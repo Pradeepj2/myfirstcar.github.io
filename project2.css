@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,300;0,400;0,600;1,400&display=swap');
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    font-family:'Epilogue', sans-serif ;
+
+}
+.logo img{
+    position: absolute;
+    background-position: center;
+    width: 120px;
+    left: 80px;
+    
+}
+.container{
+    width: 1300px;
+    overflow: hidden;
+    box-shadow: 0 0 200px black;
+    height:2500px;
+    margin:0px auto 100px auto;
+    border: 1px solid #ccc;
+     }
+     header{
+         position: relative;
+         height: 500px;
+     }
+   header nav{
+         position: relative;
+         display: flex;
+         padding:20px;
+         justify-content: space-between;
+     }
+   nav .toplinks a{
+         text-decoration: none;
+         color: black;
+         margin: 0px 15px;
+     }
+     .slogen{
+         position: absolute;
+         left:13%;
+         width: 40%;
+         top: 160px;
+         opacity: 0;
+         transform: translateY(100px);
+     }
+     .visible{
+         animation: textp 1s 0.5s forwards;
+     }
+     @keyframes textp{
+         100%{
+                transform: translateY(0px);
+        opacity: 1;
+         }
+     }
+     .slogen .titel{
+         font-size: 33px;
+         font-weight: 300;
+     }
+     .slogen .subtitel{
+         margin-top: 15px;
+         font-size: 16px;
+         font-weight: 300;
+         letter-spacing: 1px;
+         word-spacing: 2px;
+     }
+     .slogen .btn{
+         margin-top: 15px;
+     }
+
+     .slogen .btn button{
+         padding: 10px 20px;
+         background-color: aqua;
+         border: none;
+         border-radius: 10px;
+         color:black;
+         font-size: 16px;
+     }
+     .flot-box{
+         position: absolute;
+         width: 150px;
+         height: 150px;
+         border: 8px solid hsla(69, 81%, 49%, 0.527);
+         left: -80px;
+         transform: translateY(30px) rotate(45deg);
+     }
+     .imgContainer{
+         position: absolute;
+         width: 50%;
+         height: 342px;
+         right: -10%;
+         background-color: #ccc;
+         background-position: center;
+         background-size: 150%;
+         border: 10px solid hsla(69, 81%, 49%);
+         opacity: 0;
+     }
+     .animation{
+        animation: scale 0.8s forwards;
+     }
+     @keyframes scale{
+        100%{
+         background-size: 100%;
+         opacity: 1;
+        }
+     }
+     header .imgContainer{
+         background-image: url("image1.jpg");
+     }
+
+    .mainContant {
+        position: relative;
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+    }
+    .mainContant section .tit{
+        font-size: 25px;
+        font-weight: 300;
+    }
+    .mainContant section p{
+        margin-top: 15px;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        font-weight: 300;
+        width: 85%;
+    }
+    .icon{
+        margin-bottom: 15px;
+    }
+   
+    .info{
+        position: relative;
+        padding: 40px 0px;
+        height: 400px;
+    }
+    .info .slogen{
+        left: auto;
+        right: 100px;
+        padding: 5px;
+        top: 50%;
+    }
+    .info .imgContainer{
+       right: auto;
+       left: -10%;
+       top: 100px;
+    }
+    .first-info .imgContainer {
+        top: 200px;
+        background-image: url('image2.jpg');
+      }
+      .second-info .slogen{
+          right: auto;
+          left:100px;
+          top:150px;
+
+      }
+      .second-info .imgContainer{
+          left: auto;
+          right: -10%;
+          background-image: url('image3.jpg');
+          background-position:-100px 0px;
+      }
+      .banner-img{
+        height: 400px;
+        background-position: center 0;
+        transform: translateY(120px);
+        background-size:100%;
+        background-image: url('image4.jpg');
+      }
+      
